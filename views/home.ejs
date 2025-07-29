@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    
+    <div class="main-content">
+        <section class="introduction">
+            <h1>Hi, I'm <span class="name">Ali Abdullah</span></h1>
+            <p class="description">I'm a <span class="highlight">full-stack developer</span> with a passion for creating beautiful and functional websites that bring ideas to life.</p>
+            
+            <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Ali Abdullah">
+            </div>
+            <p class="description">I love turning complex problems into simple, beautiful designs. When I'm not coding, you'll find me exploring new technologies and contributing to open-source projects.</p>
+            
+            <a href="/contact" class="cta-button">Let's Work Together</a>
+        </section>
+    </div>
+</body>
+</html>

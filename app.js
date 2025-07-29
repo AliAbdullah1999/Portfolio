@@ -1,0 +1,14 @@
+const express = require("express");
+const app = express();
+const path = require("path");
+const route = require("./routes/index");
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/", route);
+
+app.listen(3000, () => {
+  console.log("server started");
+});
